@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Head from "next/head";
 
-import Header from "../Components/Header";
-import Main from "../Components/Main";
-import Footer from "../Components/Footer";
+import Header from "../components/header";
+import Main from "../components/main";
+import Footer from "../components/footer";
 
 
 
@@ -31,22 +31,26 @@ export default function Home() {
 
 
   return (
-
     <>
 
       <Head>
-        <title>Cookie Stand Admin</title>
+
+        <title>Cookie Stand</title>
         <meta />
+
       </Head>
 
 
       <div className="flex flex-col justify-between min-h-screen">
+
         <Header />
+
         <Main submitHandler={submitHandler} formData={formData} />
+
         <Footer formData={formData} />
+
       </div>
 
     </>
-
   );
 }

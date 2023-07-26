@@ -1,13 +1,14 @@
+import React from 'react'
 import { hours } from '@/data'
 
 
 
 function total(arr) {
-
     let totalHours = 0
 
     for (let i = 0; i < arr.length; i++) {
         totalHours += arr[i]
+
     }
 
     return totalHours
@@ -16,11 +17,12 @@ function total(arr) {
 
 
 function totals(arr) {
-
     let totalsData = []
 
     for (let i = 0; i < arr.length; i++) {
+
         for (let j = 0; j < arr[i].hourly_sales.length; j++) {
+
             if (totalsData[j] === undefined) {
                 totalsData[j] = arr[i].hourly_sales[j]
             }
@@ -35,12 +37,11 @@ function totals(arr) {
 
 
 
-export default function Table(props) {
+const Table = (props) => {
 
     return (
 
         <table className="w-full">
-
 
             <thead className='border border-black bg-green-500'>
                 <tr>
@@ -49,7 +50,6 @@ export default function Table(props) {
                     <th className='border border-black'>Totals</th>
                 </tr>
             </thead>
-
 
             <tbody className='border border-black bg-green-300'>
                 {props.formData.map(index => (
@@ -60,7 +60,6 @@ export default function Table(props) {
                     </tr>
                 ))}
             </tbody>
-
 
             <tfoot>
                 <tr className='border border-black bg-green-500'>
@@ -73,8 +72,9 @@ export default function Table(props) {
                 </tr>
             </tfoot>
 
-
         </table>
 
     )
 }
+
+export default Table

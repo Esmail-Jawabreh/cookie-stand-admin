@@ -1,9 +1,9 @@
-import Form from './Form'
-import Table from './Table'
+import React from 'react'
+import Form from './form'
+import Table from './table'
 
 
-export default function Main(props) {
-
+const Main = (props) => {
     return (
 
         <main className="flex flex-col items-center justify-center">
@@ -15,3 +15,5 @@ export default function Main(props) {
 
     )
 }
+
+export default Main
