@@ -12,27 +12,66 @@ yarn dev
 pnpm dev
 ```
 
+<br>
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<br>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
+<br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# cookie-stand-admin
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Lab: Class 37 & 38
 
-## Learn More
+---
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+### Lab:37 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Your job is to create a Cookie Stand Admin app using Next.js and style using Tailwind CSS.
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Feature Tasks and Requirements
+- The spec for lab is screen shot of [Cookie Stand Admin Version 1](https://codefellows.github.io/code-401-python-guide/curriculum/class-37/lab/cookie-stand-admin-version-1.png)
+- pages/Index.js should…
+    - Have <Head> component with page title set to Cookie Stand Admin
+    - Have a <header> component that matches spec.
+    - Have a <main> component containing <form> and a placeholder component showing JSON string of last created Cookie Stand.
+    - Have a <footer> component that matches spec.
+- Style app using TailwindCSS utility classes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+
+---
+<br>
+
+### Lab: 38
+
+### Feature Tasks and Requirements
+- The specs for lab are screen shots Cookie Stand Admin Version 2 and Cookie Stand Admin No Stands
+- pages/Index.js should return top level component CookieStandAdmin
+- CookieStandAdmin details…
+    - Will contain the following components:
+    - Head, Header, main, CreateForm, ReportTable, and Footer component that matches spec.
+- Import time slot data from supplied data.js file.
+CreateForm component details…
+- Import time slot data from supplied data.js file.
+CreateForm component details…
+    - Object should have hourly_sales property with hard coded [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36]
+- ReportTable details…
+    - If reports is empty then render h2 No Cookie Stands Available /h2
+    - If reports is not empty then render a table with thead,tbody and tfoot components.
+
+- Components should render to match spec.
+Style all components using TailwindCSS utility classes to match spec.
+- Components should render to match spec.
+Style all components using TailwindCSS utility classes to match spec.
+
+<br>
+
+---
+<br>
